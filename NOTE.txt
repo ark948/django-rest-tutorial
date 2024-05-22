@@ -1,0 +1,3 @@
+add snippets and rest_framework to installed apps
+add model to snippets app
+make and run migrations
