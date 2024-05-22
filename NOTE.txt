@@ -1,3 +1,5 @@
 add snippets and rest_framework to installed apps
 add model to snippets app
 make and run migrations
+add serializer for snippet model in a new file called serializers.py in snippet app
+test the serializer in django shell
