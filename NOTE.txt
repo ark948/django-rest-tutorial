@@ -3,3 +3,10 @@ add model to snippets app
 make and run migrations
 add serializer for snippet model in a new file called serializers.py in snippet app
 test the serializer in django shell
+refactor the serializer with modelSerializer
+write some regular django views
+wire the views with snippet/urls.py (add urls.py file)
+wire up the snippet urls to main urls
+tried to run server, error was raised, unapplied migrations
+ran migrations
+start server again
