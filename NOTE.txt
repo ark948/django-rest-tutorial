@@ -9,4 +9,8 @@ wire the views with snippet/urls.py (add urls.py file)
 wire up the snippet urls to main urls
 tried to run server, error was raised, unapplied migrations
 ran migrations
-start server again
+start server again. works.
+part 2 of tutorial: django regular views will be refactored to django rest framework views
+two views were added, using api_view decorator for list and detail pages
+adding format suffix to urls (allows us to access urls with specific formats like json)
+
