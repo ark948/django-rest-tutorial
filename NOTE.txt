@@ -41,3 +41,24 @@ add builtin rest api auth, to project level urls.
 we need to make a custom permission. we want all snippets be visible to anyone, but only the owner must be able to edit or delete their snippet.
 add permissions.py file.
 add the custom permission to snippet detail view
+
+part 5: Relationships and Hyperlinked APIs
+adding an endpoint for the root of api (home page) in app views.py
+adding endpoint for highlighted snippets. (i don't know what this means)
+django rest provides two styles of html renderers. one for html templates and one for pre-rendered html.
+we'll use the second one here.
+we'll also need to create our own custom view for code highlight view.
+we will inherit from genericAPIView and define the get method of it.
+add root url to app urls.py and also the url for snippet highlight.
+hyperlinking is one of many ways to create relationships between entities.
+to add this, we will replace the modelSerializer with HyperlinkedModelSerializer in serializers.py
+we also need to add endpoint names to all our url routes.
+
+the following url patterns need names:
+- The root of our API refers to 'user-list' and 'snippet-list'.
+- Our snippet serializer includes a field that refers to 'snippet-highlight'.
+- Our user serializer includes a field that refers to 'snippet-detail'.
+- snippet and user serializers include 'url' fields that by default will refer to '{model_name}-detail',in this case will be 'snippet-detail' and 'user-detail'.
+add the names to snippet urls.py
+
+adding pagination in settings.py
