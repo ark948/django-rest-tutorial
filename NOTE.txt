@@ -37,4 +37,7 @@ the create method of SnippetList needs to be modified to associate creation of n
 now, SnippetSerializer needs to be updated to reflect that.
 now, add required permissions to views. add to snippet list and snippet detail.
 next we need to add login to browsable api.
-add builtin rest api auth, to project level urls
+add builtin rest api auth, to project level urls.
+we need to make a custom permission. we want all snippets be visible to anyone, but only the owner must be able to edit or delete their snippet.
+add permissions.py file.
+add the custom permission to snippet detail view
