@@ -19,4 +19,6 @@ views.py will be refactored with classes.
 snippets/urls.py also gets refactored a bit. (add as_view)
 git commit
 
+using mixins: will allows us to easily compose reusable bits of behavior.
+using generics will gives us even further conciseness.
 
