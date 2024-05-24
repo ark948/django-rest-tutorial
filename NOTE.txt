@@ -14,3 +14,9 @@ part 2 of tutorial: django regular views will be refactored to django rest frame
 two views were added, using api_view decorator for list and detail pages
 adding format suffix to urls (allows us to access urls with specific formats like json)
 
+part 3, class-based views.
+views.py will be refactored with classes.
+snippets/urls.py also gets refactored a bit. (add as_view)
+git commit
+
+
