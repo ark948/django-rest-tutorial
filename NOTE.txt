@@ -22,3 +22,19 @@ git commit
 using mixins: will allows us to easily compose reusable bits of behavior.
 using generics will gives us even further conciseness.
 
+part 4: Authentication & Permissions
+- snippet model needs to be edited.
+tutorial asked to just delete the current database and make a new one. (do not forget to delete the migration files too.)
+python manage.py makemigrations snippets
+python manage.py migrate
+tutorial also asked to create a few different users using createsuperuser command.
+i'll create admin now, and other users later.
+admin-admin@example.com-1
+need a serializer for users too.
+also users need some views as well. they will be readonly generic views.
+update app urls.py.
+the create method of SnippetList needs to be modified to associate creation of new snippets with user objects.
+now, SnippetSerializer needs to be updated to reflect that.
+now, add required permissions to views. add to snippet list and snippet detail.
+next we need to add login to browsable api.
+add builtin rest api auth, to project level urls
