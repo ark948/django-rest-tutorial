@@ -68,3 +68,4 @@ routers generate urls automatically
 refactoring views.py (first userlist and userdetail, will be removed and replaced by one single class)
 next, snippet list and detail and highlight will be removed and replaced by a single viewset
 now we can create urls manually (done, for demonstration) or use routers to generate them automatically.
+note: the DefaultRouter will automatically create root api
