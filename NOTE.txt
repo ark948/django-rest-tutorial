@@ -60,5 +60,11 @@ the following url patterns need names:
 - Our user serializer includes a field that refers to 'snippet-detail'.
 - snippet and user serializers include 'url' fields that by default will refer to '{model_name}-detail',in this case will be 'snippet-detail' and 'user-detail'.
 add the names to snippet urls.py
-
 adding pagination in settings.py
+
+part 6: viewsets and routers
+viewsets add an extra level of abstraction to normal views (they help to write less code)
+routers generate urls automatically
+refactoring views.py (first userlist and userdetail, will be removed and replaced by one single class)
+next, snippet list and detail and highlight will be removed and replaced by a single viewset
+now we can create urls manually (done, for demonstration) or use routers to generate them automatically.
